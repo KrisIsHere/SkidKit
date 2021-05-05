@@ -1,0 +1,10 @@
+SkidKit user policy
+Developed by KrisIsHere 2021
+Copyright © SkidKit by KrisIsHere 2021
+
+This tool shall not be used for anything that may resoult in legal trouble.
+If it is used for illegal purposes the creator of the tool is not responsible as it for education/testing purposes only
+If the tool is used for anything illegal the user who committed the act of cyber crime would have to delete the tool and not use it as this violates the terms and conditions.
+Any part of the tool can used in other projects, as long as the creator (KrisIsHere) is credited.
+
+tl;dr : It is the end user's responsibility to obey all applicable laws.This script is desinged for server testing only.
