@@ -1,8 +1,8 @@
-# SkidKit 1.0 Stable
+# SkidKit 1.0 "Bender"
 A toolkit used for hacking
 
-# Keep in mind that Reaper is for educational purposed only!
-Reaper should not be used for anything illegal and if it is the user is banned from using it ever again.
+# Keep in mind that SkidKit is for educational purposed only!
+SkidKit should not be used for anything illegal and if it is the user is banned from using it ever again.
 The creator is not responsible for any damage you may cause!
 
 # Why SkidKit?
