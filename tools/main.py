@@ -97,6 +97,7 @@ def update2():
 
 
 def update():
+        os.system("rm -rf .info/tools.py")
         os.chdir('..')
         path = os.getcwd()
         parent = os.path.abspath(os.path.join(path, os.pardir))
