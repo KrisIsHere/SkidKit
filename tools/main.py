@@ -9,7 +9,7 @@ os.chdir("tools")
 
 men = """\033[38;2;88;159;240m[###]      The Skid ToolKit (\033[0;33mSkidKit\033[38;2;88;159;240m)       [###]
 \033[38;2;88;159;240m[###]      Creater by KrisIsHere            [###]
-\033[38;2;88;159;240m[###]      Version: \033[0;33m1.0.1\033[38;2;88;159;240m                   [###]
+\033[38;2;88;159;240m[###]      Version: \033[0;33m1.0.3\033[38;2;88;159;240m                   [###]
 \033[38;2;88;159;240m[###]      Codename: \033[0;33mBender\033[38;2;88;159;240m                 [###]
 
 \033[38;2;88;159;240m[###]      Discord: \033[38;2;0;255;152m@\033[38;2;255;0;211mKrisIsHere#9531\033[38;2;88;159;240m        [###]
@@ -197,6 +197,7 @@ def other():
         print("""Choose from menu:
             \033[38;2;0;255;152m1\033[38;2;88;159;240m) CloudFlare checker
             \033[38;2;0;255;152m2\033[38;2;88;159;240m) Port Scanner
+            \033[38;2;0;255;152m3\033[38;2;88;159;240m) HTTPSniff
 
             \033[38;2;0;255;152m0\033[38;2;88;159;240m) Go back to main menu""")
         try:
@@ -207,7 +208,9 @@ def other():
             if menu1 == "2":
                 ho = input("Host: ")
                 os.system("python2 Other/pscan.py -m 1 -M 99999 " + ho)
-            if menu == "0":
+            if menu1 == "3":
+                os.system("python2 Other/sniff.py")
+            if menu1 == "0":
                 menu()
         except:
             menu()
@@ -229,7 +232,7 @@ def dox():
                 os.system("python2 Dox/ip.py")
             if menu1 == "2":
                 os.system("bash Doxxing/saycheese/saycheese.sh")
-            if menu == "0":
+            if menu1 == "0":
                 menu()
         except:
             menu()
@@ -251,7 +254,7 @@ def phish():
             os.system("bash Phising/zphisher/zphisher.sh")
         if menu1 == "2":
             os.system("bash Phising/blackeye/blackeye.sh")
-        if menu == "0":
+        if menu1 == "0":
             menu()
     except:
         menu()
@@ -293,12 +296,13 @@ def dos():
                 os.system("python2 DoS/fasthttp.py")
             except:
                 print("Error: Script not starting")
-        if menu == "0":
+        if menu1 == "0":
             menu()
     except:
         menu()
 
 def menu():
+    os.system("clear")
     print(random.choice(ascii))
 
     print(men)
@@ -313,6 +317,7 @@ def menu():
                 \033[38;2;0;255;152m4\033[38;2;88;159;240m) Other
                 \033[38;2;0;255;152m5\033[38;2;88;159;240m) Update
                 \033[38;2;0;255;152m6\033[38;2;88;159;240m) Update tools
+                \033[38;2;0;255;152m7\033[38;2;88;159;240m) About/Credit
 
                 \033[38;2;0;255;152m0\033[38;2;88;159;240m) Exit""")
             menu = input("""\033[0;33mSkidKit\033[38;2;88;159;240m: """)
@@ -328,6 +333,14 @@ def menu():
                 update()
             if menu == "6":
                 update2()
+            if menu == "7":
+                print("\n")
+                print("About: ")
+                os.system("cat ../info/about.txt")
+                print("\n")
+                print("Credit: ")
+                os.system("cat ../info/credit.txt")
+                print("\n")
             if menu == "0":
                 loop = False
                 exit()
