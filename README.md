@@ -8,6 +8,7 @@ The creator is not responsible for any damage you may cause!
 # Why SkidKit?
 - Most tools
 - Best UI
+- User-friendly
 - Customer support at my discord (KrisIsHere#9531)
 
 # About
