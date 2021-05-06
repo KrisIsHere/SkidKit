@@ -9,7 +9,7 @@ os.chdir("tools")
 
 men = """\033[38;2;88;159;240m[###]      The Skid ToolKit (\033[0;33mSkidKit\033[38;2;88;159;240m)       [###]
 \033[38;2;88;159;240m[###]      Created by KrisIsHere            [###]
-\033[38;2;88;159;240m[###]      Version: \033[0;33m1.0.3\033[38;2;88;159;240m                   [###]
+\033[38;2;88;159;240m[###]      Version: \033[0;33m1.0.4\033[38;2;88;159;240m                   [###]
 \033[38;2;88;159;240m[###]      Codename: \033[0;33mBender\033[38;2;88;159;240m                 [###]
 
 \033[38;2;88;159;240m[###]      Discord: \033[38;2;0;255;152m@\033[38;2;255;0;211mKrisIsHere#9531\033[38;2;88;159;240m        [###]
@@ -150,7 +150,190 @@ W$@@M!!! .!~~ !!     .:XUW$W!~ `"~:    :
 Wi.~!X$?!-~    : ?$$$B$Wu("**$RM!
 $R@i.~~ !     :   ~$$$$$B$$en:``
 ?MXT@Wx.~    :     ~"##*$$$$M~\033[0;37m
-"""]
+""", """\x1b[1;33m                             o
+                    o       /
+                     \     /
+                      \   /
+                       \ /
+         +--------------v-------------+
+         !  __________________      @ !
+         ! /           ,  ooo  \      !
+         ! !  ---=====!#O#### !  (\)  !
+         ! !          `  \ )  !       !
+         ! !   ,;`,      ! !  !  (-)  !
+         ! !  // o ',    ! !  !       !
+         ! \  ' o \ /,   ! !  / :!!!: !
+         !  -ooo--------------  :!!!: !
+         +----------------------------+
+         []                    []\033[0;37m\n""", """\x1b[1;31m              ----
+            -===,=--
+          --,-,,,,,,-
+        :-;==:========:
+      :=---------------::
+     :-------------------::
+    :----------------------:
+   :------------------------:
+  :--------------------------:
+ :----------=:::==::::-------:
+ :------:====--,,,,--====:=---:
+:----:===,=++++...++++..--===::
+:-===--...+    +.+    +.....,-=/
+/==-.....+      +      +......./
+;-......+     - / -     +....../
+/.......+    -# . #-    +....../
+/.......+       +       +....../
+/.......+      +.+      +....../
+/........+    +...+    +......./
+/.........++++.....++++......./
+ /..........................-./
+ /.-.......................-./
+  /.-......M##M$HM###M....-../
+   /.-......########$....-../
+    /.--......$$$$+-....-.-/
+     /..--.....,,,,...--.//
+      //..----.....---.//
+        ///-..-----.-//
+           //////////\033[0;37m\n""", """\x1b[1;31m
+     _                      _______                      _
+  _dMMMb._              .adOOOOOOOOOba.              _,dMMMb_
+ dP'  ~YMMb            dOOOOOOOOOOOOOOOb            aMMP~  `Yb
+ V      ~"Mb          dOOOOOOOOOOOOOOOOOb          dM"~      V
+          `Mb.       dOOOOOOOOOOOOOOOOOOOb       ,dM'
+           `YMb._   |OOOOOOOOOOOOOOOOOOOOO|   _,dMP'
+      __     `YMMM| OP'~"YOOOOOOOOOOOP"~`YO |MMMP'     __
+    ,dMMMb.     ~~' OO     `YOOOOOP'     OO `~~     ,dMMMb.
+ _,dP~  `YMba_      OOb      `OOO'      dOO      _aMMP'  ~Yb._
+
+             `YMMMM\`OOOo     OOO     oOOO'/MMMMP'
+     ,aa.     `~YMMb `OOOb._,dOOOb._,dOOO'dMMP~'       ,aa.
+   ,dMYYMba._         `OOOOOOOOOOOOOOOOO'          _,adMYYMb.
+  ,MP'   `YMMba._      OOOOOOOOOOOOOOOOO       _,adMMP'   `YM.
+  MP'        ~YMMMba._ YOOOOPVVVVVYOOOOP  _,adMMMMP~       `YM
+  YMb           ~YMMMM\`OOOOI`````IOOOOO'/MMMMP~           dMP
+   `Mb.           `YMMMb`OOOI,,,,,IOOOO'dMMMP'           ,dM'
+     `'                  `OObNNNNNdOO'                   `'
+                           `~OOOOO~'
+          \033[0;37m""", """\x1b[1;33m
+ _________        .------______-------.
+:______.-':      :  .--------------.  :
+| ______  |      | :                : |
+|:______B:|      | |  Little Error: | |
+|:______B:|      | |                | |
+|:______B:|      | |  OS not        | |
+|         |      | |  found.        | |
+|:_____:  |      | |                | |
+|    ==   |      | :                : |
+|       O |      :  '--------------'  :
+|       o |      :'---...______...---'
+|       o |-._.-i___/'             \._
+|'-.____o_|   '-.   '-...______...-'  `-._
+:_________:      `.____________________   `-.___.-.
+                 .'.eeeeeeeeeeeeeeeeee.'.      :___:
+               .'.eeeeeeeeeeeeeeeeeeeeee.'.
+              :____________________________:\033[0;37m\n""", """\033[92m            .       .                   .       .      .     .      .
+          .    .         .    .            .     ______
+      .           .             .               ////////
+                .    .   ________   .  .      /////////     .    .
+           .            |.____.  /\        ./////////    .
+    .                 .//      \/  |\     /////////
+       .       .    .//          \ |  \ /////////       .     .   .
+                    ||.    .    .| |  ///////// .     .
+     .    .         ||           | |//`,/////                .
+             .       \\        ./ //  /  \/   .
+  .                    \\.___./ //\` '   ,_\     .     .
+          .           .     \ //////\ , /   \                 .    .
+                       .    ///////// \|  '  |    .
+      .        .          ///////// .   \ _ /          .
+                        /////////                              .
+                 .   ./////////     .     .
+         .           --------   .                  ..             .
+  .               .        .         .                       .
+                        ________________________
+____________------------                        -------------_________\n\033[0;37m""", """\x1b[1;31m XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+XX                                                                          XX
+XX   MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM   XX
+XX   MMMMMMMMMMMMMMMMMMMMMssssssssssssssssssssssssssMMMMMMMMMMMMMMMMMMMMM   XX
+XX   MMMMMMMMMMMMMMMMss'''                          '''ssMMMMMMMMMMMMMMMM   XX
+XX   MMMMMMMMMMMMyy''                                    ''yyMMMMMMMMMMMM   XX
+XX   MMMMMMMMyy''                                            ''yyMMMMMMMM   XX
+XX   MMMMMy''                                                    ''yMMMMM   XX
+XX   MMMy'                                                          'yMMM   XX
+XX   Mh'                                                              'hM   XX
+XX   -                                                                  -   XX
+XX                                                                          XX
+XX   ::                                                                ::   XX
+XX   MMhh.        ..hhhhhh..                      ..hhhhhh..        .hhMM   XX
+XX   MMMMMh   ..hhMMMMMMMMMMhh.                .hhMMMMMMMMMMhh..   hMMMMM   XX
+XX   ---MMM .hMMMMdd:::dMMMMMMMhh..        ..hhMMMMMMMd:::ddMMMMh. MMM---   XX
+XX   MMMMMM MMmm''      'mmMMMMMMMMyy.  .yyMMMMMMMMmm'      ''mmMM MMMMMM   XX
+XX   ---mMM ''             'mmMMMMMMMM  MMMMMMMMmm'             '' MMm---   XX
+XX   yyyym'    .              'mMMMMm'  'mMMMMm'              .    'myyyy   XX
+XX   mm''    .y'     ..yyyyy..  ''''      ''''  ..yyyyy..     'y.    ''mm   XX
+XX           MN    .sMMMMMMMMMss.   .    .   .ssMMMMMMMMMs.    NM           XX
+XX           N`    MMMMMMMMMMMMMN   M    M   NMMMMMMMMMMMMM    `N           XX
+XX            +  .sMNNNNNMMMMMN+   `N    N`   +NMMMMMNNNNNMs.  +            XX
+XX              o+++     ++++Mo    M      M    oM++++     +++o              XX
+XX                                oo      oo                                XX
+XX           oM                 oo          oo                 Mo           XX
+XX         oMMo                M              M                oMMo         XX
+XX       +MMMM                 s              s                 MMMM+       XX
+XX      +MMMMM+            +++NNNN+        +NNNN+++            +MMMMM+      XX
+XX     +MMMMMMM+       ++NNMMMMMMMMN+    +NMMMMMMMMNN++       +MMMMMMM+     XX
+XX     MMMMMMMMMNN+++NNMMMMMMMMMMMMMMNNNNMMMMMMMMMMMMMMNN+++NNMMMMMMMMM     XX
+XX     yMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMy     XX
+XX   m  yMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMy  m   XX
+XX   MMm yMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMy mMM   XX
+XX   MMMm .yyMMMMMMMMMMMMMMMM     MMMMMMMMMM     MMMMMMMMMMMMMMMMyy. mMMM   XX
+XX   MMMMd   ''''hhhhh       odddo          obbbo        hhhh''''   dMMMM   XX
+XX   MMMMMd             'hMMMMMMMMMMddddddMMMMMMMMMMh'             dMMMMM   XX
+XX   MMMMMMd              'hMMMMMMMMMMMMMMMMMMMMMMh'              dMMMMMM   XX
+XX   MMMMMMM-               ''ddMMMMMMMMMMMMMMdd''               -MMMMMMM   XX
+XX   MMMMMMMM                   '::dddddddd::'                   MMMMMMMM   XX
+XX   MMMMMMMM-                                                  -MMMMMMMM   XX
+XX   MMMMMMMMM                                                  MMMMMMMMM   XX
+XX   MMMMMMMMMy                                                yMMMMMMMMM   XX
+XX   MMMMMMMMMMy.                                            .yMMMMMMMMMM   XX
+XX   MMMMMMMMMMMMy.                                        .yMMMMMMMMMMMM   XX
+XX   MMMMMMMMMMMMMMy.                                    .yMMMMMMMMMMMMMM   XX
+XX   MMMMMMMMMMMMMMMMs.                                .sMMMMMMMMMMMMMMMM   XX
+XX   MMMMMMMMMMMMMMMMMMss.           ....           .ssMMMMMMMMMMMMMMMMMM   XX
+XX   MMMMMMMMMMMMMMMMMMMMNo         oNNNNo         oNMMMMMMMMMMMMMMMMMMMM   XX
+XX                                                                          XX
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+    .o88o.                               o8o                .
+    888 `"                               `"'              .o8
+   o888oo   .oooo.o  .ooooo.   .ooooo.  oooo   .ooooo.  .o888oo oooo    ooo
+    888    d88(  "8 d88' `88b d88' `"Y8 `888  d88' `88b   888    `88.  .8'
+    888    `"Y88b.  888   888 888        888  888ooo888   888     `88..8'
+    888    o.  )88b 888   888 888   .o8  888  888    .o   888 .    `888'
+   o888o   8""888P' `Y8bod8P' `Y8bod8P' o888o `Y8bod8P'   "888"      d8'
+                                                                .o...P'
+                                                                `XER0'
+\033[0;37m"""]
+
+'''
+         ,
+       _=|_
+     _[_## ]_
+_  +[_[_+_]P/    _    |_       ____      _=--|-~
+ ~---\_I_I_[=\--~ ~~--[o]--==-|##==]-=-~~  o]H
+-~ /[_[_|_]_]\\  -_  [[=]]    |====]  __  !j]H
+  /    "|"    \      ^U-U^  - |    - ~ .~  U/~
+ ~~--__~~~--__~~-__   H_H_    |_     --   _H_
+-. _  ~~~#######~~~     ~~~-    ~~--  ._ - ~~-=
+           ~~~=~~  -~~--  _     . -      _ _ -
+
+       ----------------------------------
+      |        June, 20th, 1969          |
+      |  Here Men from the Planet Earth  |
+      |   First set Foot upon the Moon   |
+      | We came in Peace for all Mankind |
+       ----------------------------------
+
+'''
+
 
 def update2():
     os.system("mkdir .notgithubtools")
