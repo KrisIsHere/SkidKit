@@ -195,11 +195,11 @@ def other():
         print(men)
 
         print("""Choose from menu:
-            \033[38;2;0;255;152m1\033[38;2;88;159;240m) CloudFlare checker
-            \033[38;2;0;255;152m2\033[38;2;88;159;240m) Port Scanner
-            \033[38;2;0;255;152m3\033[38;2;88;159;240m) HTTPSniff
+        \033[38;2;0;255;152m1\033[38;2;88;159;240m) CloudFlare checker
+        \033[38;2;0;255;152m2\033[38;2;88;159;240m) Port Scanner
+        \033[38;2;0;255;152m3\033[38;2;88;159;240m) HTTPSniff
 
-            \033[38;2;0;255;152m0\033[38;2;88;159;240m) Go back to main menu""")
+        \033[38;2;0;255;152m0\033[38;2;88;159;240m) Go back to main menu""")
         try:
             menu1 = input("""\033[0;33mSkidKitPhish\033[38;2;88;159;240m: """)
             if menu1 == "1":
@@ -222,10 +222,10 @@ def dox():
         print(men)
 
         print("""Choose from menu:
-            \033[38;2;0;255;152m1\033[38;2;88;159;240m) IP Tracker
-            \033[38;2;0;255;152m2\033[38;2;88;159;240m) SayCheese
+        \033[38;2;0;255;152m1\033[38;2;88;159;240m) IP Tracker
+        \033[38;2;0;255;152m2\033[38;2;88;159;240m) SayCheese
 
-            \033[38;2;0;255;152m0\033[38;2;88;159;240m) Go back to main menu""")
+        \033[38;2;0;255;152m0\033[38;2;88;159;240m) Go back to main menu""")
         try:
             menu1 = input("""\033[0;33mSkidKitPhish\033[38;2;88;159;240m: """)
             if menu1 == "1":
@@ -305,8 +305,7 @@ def menu():
     os.system("clear")
     print(random.choice(ascii))
 
-    print(men)
-    print("""Choose from menu:
+    tools = """Choose from menu:
         \033[38;2;0;255;152m1\033[38;2;88;159;240m) DoS
         \033[38;2;0;255;152m2\033[38;2;88;159;240m) Phising
         \033[38;2;0;255;152m3\033[38;2;88;159;240m) Doxxing
@@ -315,7 +314,10 @@ def menu():
         \033[38;2;0;255;152m6\033[38;2;88;159;240m) Update tools
         \033[38;2;0;255;152m7\033[38;2;88;159;240m) About/Credit
 
-        \033[38;2;0;255;152m0\033[38;2;88;159;240m) Exit""")
+        \033[38;2;0;255;152m0\033[38;2;88;159;240m) Exit"""
+
+    print(men)
+    print(tools)
     loop = True
     while loop == True:
         try:
@@ -347,16 +349,7 @@ def menu():
                 os.system("clear")
                 print(random.choice(ascii))
                 print(men)
-                print("""Choose from menu:
-                    \033[38;2;0;255;152m1\033[38;2;88;159;240m) DoS
-                    \033[38;2;0;255;152m2\033[38;2;88;159;240m) Phising
-                    \033[38;2;0;255;152m3\033[38;2;88;159;240m) Doxxing
-                    \033[38;2;0;255;152m4\033[38;2;88;159;240m) Other
-                    \033[38;2;0;255;152m5\033[38;2;88;159;240m) Update
-                    \033[38;2;0;255;152m6\033[38;2;88;159;240m) Update tools
-                    \033[38;2;0;255;152m7\033[38;2;88;159;240m) About/Credit
-
-                    \033[38;2;0;255;152m0\033[38;2;88;159;240m) Exit""")
+                print(tools)
 
         except:
             print("You mistyped, try again.")
