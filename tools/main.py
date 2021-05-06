@@ -203,7 +203,7 @@ def other():
 
         \033[38;2;0;255;152m0\033[38;2;88;159;240m) Go back to main menu""")
         try:
-            menu1 = input("""\033[0;33mSkidKitPhish\033[38;2;88;159;240m: """)
+            menu1 = input("""\033[0;33mSkidKitOther\033[38;2;88;159;240m: """)
             if menu1 == "1":
                 xd = input("Site: ")
                 os.system("python2 Other/cloudcheck.py " + xd)
@@ -229,7 +229,7 @@ def dox():
 
         \033[38;2;0;255;152m0\033[38;2;88;159;240m) Go back to main menu""")
         try:
-            menu1 = input("""\033[0;33mSkidKitPhish\033[38;2;88;159;240m: """)
+            menu1 = input("""\033[0;33mSkidKitDox\033[38;2;88;159;240m: """)
             if menu1 == "1":
                 os.system("python2 Doxxing/ip.py")
             if menu1 == "2":
