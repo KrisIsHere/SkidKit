@@ -229,7 +229,7 @@ def dox():
         try:
             menu1 = input("""\033[0;33mSkidKitPhish\033[38;2;88;159;240m: """)
             if menu1 == "1":
-                os.system("python2 Dox/ip.py")
+                os.system("python2 Doxxing/ip.py")
             if menu1 == "2":
                 os.system("bash Doxxing/saycheese/saycheese.sh")
             if menu1 == "0":
