@@ -9,7 +9,7 @@ os.chdir("tools")
 
 men = """\033[38;2;88;159;240m[###]      The Skid ToolKit (\033[0;33mSkidKit\033[38;2;88;159;240m)       [###]
 \033[38;2;88;159;240m[###]      Created by KrisIsHere            [###]
-\033[38;2;88;159;240m[###]      Version: \033[0;33m1.0.4\033[38;2;88;159;240m                   [###]
+\033[38;2;88;159;240m[###]      Version: \033[0;33m1.2.0\033[38;2;88;159;240m                   [###]
 \033[38;2;88;159;240m[###]      Codename: \033[0;33mBender\033[38;2;88;159;240m                 [###]
 
 \033[38;2;88;159;240m[###]      Discord: \033[38;2;0;255;152m@\033[38;2;255;0;211mKrisIsHere#9531\033[38;2;88;159;240m        [###]
@@ -339,16 +339,20 @@ def update2():
     os.system("mkdir .notgithubtools")
     os.system("cp -r DoS/fasthttp.py .notgithubtools")
     os.system("cp -r DoS/PyDDOS.py .notgithubtools")
+    os.system("cp -r DoS/tcp.py .notgithubtools")
     os.system("cp -r Doxxing/ip.py .notgithubtools")
     os.system("cp -r Other/cloudcheck.py .notgithubtools")
     os.system("cp -r Other/pscan.py .notgithubtools")
+    os.system("cp -r Other/siteip.py .notgithubtools")
     os.system("cp -r Other/sniff.py .notgithubtools")
     os.system("rm -rf Other Phising Doxxing DoS")
     os.system("mkdir Doxxing Other Phising DoS")
     os.system("cp -r .notgithubtools/cloudcheck.py Other")
     os.system("cp -r .notgithubtools/sniff.py Other")
+    os.system("cp -r .notgithubtools/siteip.py Other")
     os.system("cp -r .notgithubtools/fasthttp.py DoS")
     os.system("cp -r .notgithubtools/PyDDOS.py DoS")
+    os.system("cp -r .notgithubtools/tcp.py DoS")
     os.system("cp -r .notgithubtools/ip.py Doxxing")
     os.system("cp -r .notgithubtools/pscan.py Other")
     os.chdir("DoS")
@@ -383,6 +387,8 @@ def other():
         \033[38;2;0;255;152m1\033[38;2;88;159;240m) CloudFlare checker
         \033[38;2;0;255;152m2\033[38;2;88;159;240m) Port Scanner
         \033[38;2;0;255;152m3\033[38;2;88;159;240m) HTTPSniff
+        \033[38;2;0;255;152m4\033[38;2;88;159;240m) Vuln. Scan
+        \033[38;2;0;255;152m5\033[38;2;88;159;240m) Site IP Finder
 
         \033[38;2;0;255;152m0\033[38;2;88;159;240m) Go back to main menu""")
         try:
@@ -395,6 +401,14 @@ def other():
                 os.system("python2 Other/pscan.py -m 1 -M 99999 " + ho)
             if menu1 == "3":
                 os.system("python2 Other/sniff.py")
+            if menu1 == "4":
+                url = input("Enter target URL: ")
+                print("Doing XSS scan :")
+                bane.xss(url)
+                print("Doing RCE scan :")
+                bane.rce(url)
+            if menu1 == "5":
+                os.system("python3 Other/siteip.py")
             if menu1 == "0":
                 menu()
         except:
@@ -456,6 +470,8 @@ def dos():
         \033[38;2;0;255;152m3\033[38;2;88;159;240m) BDoS
         \033[38;2;0;255;152m4\033[38;2;88;159;240m) FastHTTP
         \033[38;2;0;255;152m5\033[38;2;88;159;240m) UDP Flood
+        \033[38;2;0;255;152m6\033[38;2;88;159;240m) IP Pinger
+        \033[38;2;0;255;152m7\033[38;2;88;159;240m) TCP Pinger
 
         \033[38;2;0;255;152m0\033[38;2;88;159;240m) Go back to main menu""")
     try:
@@ -474,6 +490,13 @@ def dos():
         if menu1 == "2":
             targ = input("Target (www.example.com): ")
             os.system("python2 DoS/Saphyra.py/saphyra " + targ)
+        if menu1 == "7":
+            ho = input("Host: ")
+            po = input("Port: ")
+            os.system("python2 DoS/tcp.py " + ho + " " + po + " 99999" )
+        if menu1 == "6":
+            ho = input("Host: ")
+            os.system("ping " + ho)
         if menu1 == "5":
             os.system("python2 DoS/PyDDOS.py")
         if menu1 == "4":
