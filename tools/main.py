@@ -8,7 +8,7 @@ import os.path
 os.chdir("tools")
 
 men = """\033[38;2;88;159;240m[###]      The Skid ToolKit (\033[0;33mSkidKit\033[38;2;88;159;240m)       [###]
-\033[38;2;88;159;240m[###]      Creater by KrisIsHere            [###]
+\033[38;2;88;159;240m[###]      Created by KrisIsHere            [###]
 \033[38;2;88;159;240m[###]      Version: \033[0;33m1.0.3\033[38;2;88;159;240m                   [###]
 \033[38;2;88;159;240m[###]      Codename: \033[0;33mBender\033[38;2;88;159;240m                 [###]
 
