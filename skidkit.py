@@ -10,7 +10,7 @@ import random
 import os.path
 
 if os.getuid():
-    print("Script By KrisIsHere | SkidKit Ver. 1.0.4")
+    print("Script By KrisIsHere | SkidKit Ver. 1.2.0")
     exit('\nroot access required\n')
 
 ascii = ["""\x1b[1;33m
