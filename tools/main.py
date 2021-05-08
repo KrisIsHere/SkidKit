@@ -7,10 +7,10 @@ import random
 import os.path
 os.chdir("tools")
 
-men = """\033[38;2;88;159;240m[###]      The Skid ToolKit (\033[0;33mSkidKit\033[38;2;88;159;240m)       [###]
+men = """\033[38;2;88;159;240m[###]      The Skid ToolKit (\x1b[1;33mSkidKit\033[38;2;88;159;240m)       [###]
 \033[38;2;88;159;240m[###]      Created by KrisIsHere            [###]
-\033[38;2;88;159;240m[###]      Version: \033[0;33m1.2.0\033[38;2;88;159;240m                   [###]
-\033[38;2;88;159;240m[###]      Codename: \033[0;33mBender\033[38;2;88;159;240m                 [###]
+\033[38;2;88;159;240m[###]      Version: \x1b[1;33m1.2.1\033[38;2;88;159;240m                   [###]
+\033[38;2;88;159;240m[###]      Codename: \x1b[1;33mBender\033[38;2;88;159;240m                 [###]
 
 \033[38;2;88;159;240m[###]      Discord: \033[38;2;0;255;152m@\033[38;2;255;0;211mKrisIsHere#9531\033[38;2;88;159;240m        [###]
 \033[38;2;88;159;240m[###]      Follow me on Github: \033[38;2;0;255;152m@\033[38;2;255;0;211mKrisIsHere\033[38;2;88;159;240m [###]
@@ -389,10 +389,11 @@ def other():
         \033[38;2;0;255;152m3\033[38;2;88;159;240m) HTTPSniff
         \033[38;2;0;255;152m4\033[38;2;88;159;240m) Vuln. Scan
         \033[38;2;0;255;152m5\033[38;2;88;159;240m) Site IP Finder
+        \033[38;2;0;255;152m6\033[38;2;88;159;240m) Site Dir. Scanner
 
         \033[38;2;0;255;152m0\033[38;2;88;159;240m) Go back to main menu""")
         try:
-            menu1 = input("""\033[0;33mSkidKitOther\033[38;2;88;159;240m: """)
+            menu1 = input("""\x1b[1;33mSkidKitOther\033[38;2;88;159;240m: """)
             if menu1 == "1":
                 xd = input("Site: ")
                 os.system("python2 Other/cloudcheck.py " + xd)
@@ -409,6 +410,12 @@ def other():
                 bane.rce(url)
             if menu1 == "5":
                 os.system("python3 Other/siteip.py")
+            if menu1 == "6":
+                url = input("Site (https://example.com): ")
+                word = input("Wordlist (1 for default): ")
+                if word == "1":
+                    word = "Other/directory-list-big.txt"
+                os.system("python3 Other/dir.py " + url + " " + word)
             if menu1 == "0":
                 menu()
         except:
@@ -426,7 +433,7 @@ def dox():
 
         \033[38;2;0;255;152m0\033[38;2;88;159;240m) Go back to main menu""")
         try:
-            menu1 = input("""\033[0;33mSkidKitDox\033[38;2;88;159;240m: """)
+            menu1 = input("""\x1b[1;33mSkidKitDox\033[38;2;88;159;240m: """)
             if menu1 == "1":
                 os.system("python2 Doxxing/ip.py")
             if menu1 == "2":
@@ -448,7 +455,7 @@ def phish():
 
         \033[38;2;0;255;152m0\033[38;2;88;159;240m) Go back to main menu""")
     try:
-        menu1 = input("""\033[0;33mSkidKitPhish\033[38;2;88;159;240m: """)
+        menu1 = input("""\x1b[1;33mSkidKitPhish\033[38;2;88;159;240m: """)
         if menu1 == "1":
             os.system("bash Phising/zphisher/zphisher.sh")
         if menu1 == "2":
@@ -475,7 +482,7 @@ def dos():
 
         \033[38;2;0;255;152m0\033[38;2;88;159;240m) Go back to main menu""")
     try:
-        menu1 = input("""\033[0;33mSkidKitDoS\033[38;2;88;159;240m: """)
+        menu1 = input("""\x1b[1;33mSkidKitDoS\033[38;2;88;159;240m: """)
         if menu1 == "1":
         		targ = input("Target (www.example.com): ")
         		tar = input("Threads: ")
@@ -529,7 +536,7 @@ def menu():
     loop = True
     while loop == True:
         try:
-            menu = input("""\033[0;33mSkidKit\033[38;2;88;159;240m: """)
+            menu = input("""\x1b[1;33mSkidKit\033[38;2;88;159;240m: """)
             if menu == "1":
                 dos()
             if menu == "2":
