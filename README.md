@@ -1,4 +1,4 @@
-# SkidKit 1.2.1 "Bender"
+# SkidKit 1.2.2 "Bender"
 A toolkit used for hacking
 
 # Keep in mind that SkidKit is for educational purposed only!
