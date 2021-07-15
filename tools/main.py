@@ -394,6 +394,7 @@ def other():
         \033[38;2;0;255;152m4\033[38;2;88;159;240m) Vuln. Scan
         \033[38;2;0;255;152m5\033[38;2;88;159;240m) Site IP Finder
         \033[38;2;0;255;152m6\033[38;2;88;159;240m) Site Dir. Scanner
+        \033[38;2;0;255;152m7\033[38;2;88;159;240m) Traceroute
 
         \033[38;2;0;255;152m0\033[38;2;88;159;240m) Go back to main menu""")
         try:
@@ -420,6 +421,12 @@ def other():
                 if word == "1":
                     word = "Other/directory-list-big.txt"
                 os.system("python3 Other/dir.py " + url + " " + word)
+            if menu1 == "7":
+                ip = input("IP/Site to traceroute: ")
+                try:
+                    os.system("traceroute " + ip)
+                except:
+                    print("No traceroute found :(")
             if menu1 == "0":
                 menu()
         except:
