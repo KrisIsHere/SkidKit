@@ -7,7 +7,7 @@ import random
 import os.path
 os.chdir("tools")
 
-men = """\033[38;2;88;159;240m[###]      The Skid ToolKit (\x1b[1;33mSkidKit\033[38;2;88;159;240m)       [###]
+men = """\x1b[1;33m\033[38;2;88;159;240m[###]      The Skid ToolKit (\x1b[1;33mSkidKit\033[38;2;88;159;240m)       [###]
 \033[38;2;88;159;240m[###]      Created by KrisIsHere            [###]
 \033[38;2;88;159;240m[###]      Version: \x1b[1;33m1.2.2\033[38;2;88;159;240m                   [###]
 \033[38;2;88;159;240m[###]      Codename: \x1b[1;33mBender\033[38;2;88;159;240m                 [###]
