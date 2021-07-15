@@ -441,7 +441,7 @@ def dox():
             if menu1 == "1":
                 os.system("python2 Doxxing/ip.py")
             if menu1 == "2":
-                os.chdir("dox/saycheese")
+                os.chdir("Doxxing/saycheese")
                 os.system("bash Doxxing/saycheese/saycheese.sh")
                 os.chdir("..")
                 os.chdir("..")
