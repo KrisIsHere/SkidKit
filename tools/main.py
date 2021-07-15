@@ -441,7 +441,10 @@ def dox():
             if menu1 == "1":
                 os.system("python2 Doxxing/ip.py")
             if menu1 == "2":
+                os.chdir("dox/saycheese")
                 os.system("bash Doxxing/saycheese/saycheese.sh")
+                os.chdir("..")
+                os.chdir("..")
             if menu1 == "0":
                 menu()
         except:
@@ -461,9 +464,15 @@ def phish():
     try:
         menu1 = input("""\x1b[1;33mSkidKitPhish\033[38;2;88;159;240m: """)
         if menu1 == "1":
-            os.system("bash Phising/zphisher/zphisher.sh")
+            os.chdir("Phising/zphisher")
+            os.system("bash zphisher.sh")
+            os.chdir("..")
+            os.chdir("..")
         if menu1 == "2":
-            os.system("bash Phising/blackeye/blackeye.sh")
+            os.chdir("Phising/blackeye")
+            os.system("bash blackeye.sh")
+            os.chdir("..")
+            os.chdir("..")
         if menu1 == "0":
             menu()
     except:
