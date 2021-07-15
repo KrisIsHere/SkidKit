@@ -14,25 +14,25 @@ if platform == "linux" or platform == "linux2":
     if lmao == "1":
             xd = input("Would you like to proceed with the instalation?: (Y/N) ")
             if xd == "y":
-                os.system("apt install php tcpdump scapy python3-pip ; pip3 install bane pysocks ; mkdir tools/.info ; touch tools/.info/setup.py")
+                os.system("apt install php tcpdump traceroute scapy python3-pip ; pip3 install bane pysocks ; mkdir tools/.info ; touch tools/.info/setup.py")
             elif xd == "Y":
-                os.system("apt install php tcpdump scapy python3-pip ; pip3 install bane pysocks ; mkdir tools/.info ; touch tools/.info/setup.py")
+                os.system("apt install php tcpdump traceroute scapy python3-pip ; pip3 install bane pysocks ; mkdir tools/.info ; touch tools/.info/setup.py")
             else:
                 print("Setup stopped.")
     if lmao == "2":
             xd = input("Would you like to proceed with the instalation?: (Y/N) ")
             if xd == "y":
-                os.system("pacman -S php tcpdump scapy python3-pip ; pip3 install bane pysocks ; mkdir tools/.info ; touch tools/.info/setup.py")
+                os.system("pacman -S php tcpdump scapy traceroute traceroute python3-pip ; pip3 install bane pysocks ; mkdir tools/.info ; touch tools/.info/setup.py")
             elif xd == "Y":
-                os.system("pacman -S php tcpdump scapy python3-pip ; pip3 install bane pysocks ; mkdir tools/.info ; touch tools/.info/setup.py")
+                os.system("pacman -S php tcpdump scapy traceroute python3-pip ; pip3 install bane pysocks ; mkdir tools/.info ; touch tools/.info/setup.py")
             else:
                 print("Setup stopped.")
     if lmao == "3":
             xd = input("Would you like to proceed with the instalation?: (Y/N) ")
             if xd == "y":
-                os.system("xbps-install -S php tcpdump scapy python3-pip ; pip3 install bane pysocks ; mkdir tools/.info ; touch tools/.info/setup.py")
+                os.system("xbps-install -S php tcpdump scapy traceroute python3-pip ; pip3 install bane pysocks ; mkdir tools/.info ; touch tools/.info/setup.py")
             elif xd == "Y":
-                os.system("xbps-install -S php tcpdump scapy python3-pip ; pip3 install bane pysocks ; mkdir tools/.info ; touch tools/.info/setup.py")
+                os.system("xbps-install -S php tcpdump scapy traceroute python3-pip ; pip3 install bane pysocks ; mkdir tools/.info ; touch tools/.info/setup.py")
             else:
                 print("Setup stopped.")
 elif platform == "darwin":
