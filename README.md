@@ -1,4 +1,4 @@
-# SkidKit 1.2.2 "Bender"
+# SkidKit 1.2.3 "Bender"
 A toolkit used for hacking
 
 # Keep in mind that SkidKit is for educational purposed only!
@@ -9,6 +9,7 @@ The creator is not responsible for any damage you may cause!
 - Most tools
 - Best UI
 - User-friendly
+- Auto-update so you dont have to worry about updating
 - Customer support at my discord (KrisIsHere#9531)
 
 # About
