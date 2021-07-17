@@ -84,13 +84,12 @@ def ver_check():
                 print('\n\033[38;2;88;159;240m[\x1b[1;31mUp-To-Date\033[38;2;88;159;240m]' + '\n')
                 setupcheck()
             else:
-                print('\n\033[38;2;88;159;240m[\x1b[1;31mAvailable\033[38;2;88;159;240m: \x1b[1;31m{}\033[38;2;88;159;240m'.format(
-                    github_ver) + ']' + '\n')
+                print('\n\033[38;2;88;159;240m[\x1b[1;31mAvailable\033[38;2;88;159;240m: \x1b[1;31m{}\033[38;2;88;159;240m'.format(github_ver) + ']' + '\n')
         try:
             up = input(
                 "\033[38;2;88;159;240mWould you like to update? \033[0;33m(\033[0;33mY\033[92;40m/\033[0;33mN)\33[37m: ")
             if up == "y":
-                os.system("rm -rf .info/tools.py")
+                os.system("rm -rf tools/.info/tools.py")
                 path = os.getcwd()
                 parent = os.path.abspath(os.path.join(path, os.pardir))
                 os.system("cp -r tools/.info " + parent)
@@ -98,7 +97,7 @@ def ver_check():
                 os.system("python3 " + parent + "/update.py")
                 sys.exit()
             elif up == "Y":
-                os.system("rm -rf .info/tools.py")
+                os.system("rm -rf tools/.info/tools.py")
                 path = os.getcwd()
                 parent = os.path.abspath(os.path.join(path, os.pardir))
                 os.system("cp -r tools/.info " + parent)
