@@ -6,7 +6,7 @@ if os.getuid():
     print("Script By KrisIsHere | SkidKit Ver. 1.2.3")
     exit('\nroot access required\n')
 
-version = "1.2.2"
+version = "1.2.3"
 
 ascii = ["""\x1b[1;33m
    _____ _    _     _ _  ___ _
