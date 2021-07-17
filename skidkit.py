@@ -6,7 +6,7 @@ if os.getuid():
     print("Script By KrisIsHere | SkidKit Ver. 1.2.3")
     exit('\nroot access required\n')
 
-version = "1.2.3"
+version = "1.2.2"
 
 ascii = ["""\x1b[1;33m
    _____ _    _     _ _  ___ _
@@ -86,29 +86,25 @@ def ver_check():
                 exit()
             else:
                 print('\n\033[38;2;88;159;240m[\x1b[1;31mAvailable\033[38;2;88;159;240m: \x1b[1;31m{}\033[38;2;88;159;240m'.format(github_ver) + ']' + '\n')
-        try:
-            up = input(
-                "\033[38;2;88;159;240mWould you like to update? \033[0;33m(\033[0;33mY\033[92;40m/\033[0;33mN)\33[37m: ")
-            if up == "y":
-                os.system("rm -rf tools/.info/tools.py")
-                path = os.getcwd()
-                parent = os.path.abspath(os.path.join(path, os.pardir))
-                os.system("cp -r tools/.info " + parent)
-                os.system("cp -r tools/update.py " + parent)
-                os.system("python3 " + parent + "/update.py")
-                sys.exit()
-            elif up == "Y":
-                os.system("rm -rf tools/.info/tools.py")
-                path = os.getcwd()
-                parent = os.path.abspath(os.path.join(path, os.pardir))
-                os.system("cp -r tools/.info " + parent)
-                os.system("cp -r tools/update.py " + parent)
-                os.system("python3 " + parent + "/update.py")
-                sys.exit()
-            else:
-                exit()
-        except:
-            exit()
+                up = input("\033[38;2;88;159;240mWould you like to update? \033[0;33m(\033[0;33mY\033[92;40m/\033[0;33mN)\33[37m: ")
+                if up == "y":
+                    os.system("rm -rf tools/.info/tools.py")
+                    path = os.getcwd()
+                    parent = os.path.abspath(os.path.join(path, os.pardir))
+                    os.system("cp -r tools/.info " + parent)
+                    os.system("cp -r tools/update.py " + parent)
+                    os.system("python3 " + parent + "/update.py")
+                    sys.exit()
+                elif up == "Y":
+                    os.system("rm -rf tools/.info/tools.py")
+                    path = os.getcwd()
+                    parent = os.path.abspath(os.path.join(path, os.pardir))
+                    os.system("cp -r tools/.info " + parent)
+                    os.system("cp -r tools/update.py " + parent)
+                    os.system("python3 " + parent + "/update.py")
+                    sys.exit()
+                else:
+                    exit()
 
         else:
             print('\033[38;2;88;159;240m[Status\033[38;2;88;159;240m: \x1b[1;31m{} '.format(ver_sc) + '\033[38;2;88;159;240m]' + '\n')
