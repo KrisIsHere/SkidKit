@@ -83,6 +83,7 @@ def ver_check():
             if version == github_ver:
                 print('\n\033[38;2;88;159;240m[\x1b[1;31mUp-To-Date\033[38;2;88;159;240m]' + '\n')
                 setupcheck()
+                exit()
             else:
                 print('\n\033[38;2;88;159;240m[\x1b[1;31mAvailable\033[38;2;88;159;240m: \x1b[1;31m{}\033[38;2;88;159;240m'.format(github_ver) + ']' + '\n')
         try:
