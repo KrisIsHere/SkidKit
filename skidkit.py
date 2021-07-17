@@ -1,4 +1,4 @@
-mport os.path
+import os.path
 
 if os.getuid():
     print("Script By KrisIsHere | SkidKit Ver. 1.2.2")
