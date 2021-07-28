@@ -16,6 +16,18 @@ The creator is not responsible for any damage you may cause!
 This tool was made by KrisIsHere to help you manage all of your hacking tools in one place.
 SkidKit's purpose is to make your life easier by compiling all of your tools in the same place so you dont have to look for them all over your computer.
 
+### Installation
+```
+$ git clone https://github.com/KrisIsHere/SkidKit/
+$ cd SkidKit
+$ sudo python3 setup.py
+```
+select your package manager after that
+```
+$ sudo python3 skidkit.py
+```
+and press "1" to install all the 3rd party tools
+
 # Credit
 SkidKit was mainly developed by KrisIsHere
 
