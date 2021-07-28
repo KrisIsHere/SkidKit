@@ -16,7 +16,7 @@ The creator is not responsible for any damage you may cause!
 This tool was made by KrisIsHere to help you manage all of your hacking tools in one place.
 SkidKit's purpose is to make your life easier by compiling all of your tools in the same place so you dont have to look for them all over your computer.
 
-### Installation
+# Installation
 ```
 $ git clone https://github.com/KrisIsHere/SkidKit/
 $ cd SkidKit
