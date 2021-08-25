@@ -579,7 +579,7 @@ def menu():
                 print("\n")
             if menu == "0":
                 loop = False
-                exit()
+                pass
             if menu == "clear":
                 os.system("clear")
                 print(random.choice(ascii))
@@ -588,6 +588,7 @@ def menu():
 
         except:
             print("You mistyped, try again.")
+        exit()
 if os.path.isfile(".info/tools.py"):
     menu()
 else:
