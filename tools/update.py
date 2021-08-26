@@ -1,5 +1,4 @@
 import os
-import sys
 from sys import platform
 path = os.getcwd()
 parent = os.path.abspath(os.path.join(path, os.pardir))
@@ -12,7 +11,7 @@ if xd in ["Y", "y"]:
     os.system("rm -rf .info")
     os.chdir(parent + "/SkidKit")
     os.system("python3 main.py")
-    sys.exit()
+    exit()
 else:
     print("ok")
-    sys.exit()
+    exit()
