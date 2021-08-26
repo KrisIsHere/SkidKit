@@ -9,7 +9,7 @@ os.chdir("tools")
 
 men = """\x1b[1;33m\033[38;2;88;159;240m[###]      The Skid ToolKit (\x1b[1;33mSkidKit\033[38;2;88;159;240m)       [###]
 \033[38;2;88;159;240m[###]      Created by KrisIsHere            [###]
-\033[38;2;88;159;240m[###]      Version: \x1b[1;33m1.2.3\033[38;2;88;159;240m                   [###]
+\033[38;2;88;159;240m[###]      Version: \x1b[1;33m1.2.4\033[38;2;88;159;240m                   [###]
 \033[38;2;88;159;240m[###]      Codename: \x1b[1;33mBender\033[38;2;88;159;240m                 [###]
 
 \033[38;2;88;159;240m[###]      Discord: \033[38;2;0;255;152m@\033[38;2;255;0;211mKrisIsHere#9531\033[38;2;88;159;240m        [###]
@@ -20,9 +20,7 @@ try:
     import bane
 except:
     xdd = input("You need to install bane\n Would you like to do it automatically? (Y/N) ")
-    if xdd == "y":
-        os.system("pip3 install bane")
-    elif xdd == "Y":
+    if xdd in ["Y", "y"]:
         os.system("pip3 install bane")
     else:
         sys.exit()
@@ -31,9 +29,7 @@ try:
     from scapy.all import *
 except:
     xdd = input("You need to install scapy\n Would you like to do it automatically? (Y/N) ")
-    if xdd == "y":
-        os.system("sudo apt install scapy")
-    elif xdd == "Y":
+    if xdd in ["Y", "y"]:
         os.system("sudo apt install scapy")
     else:
         sys.exit()
