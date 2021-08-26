@@ -4,10 +4,10 @@ import random
 from time import sleep
 
 if os.getuid():
-    print("Script By KrisIsHere | SkidKit Ver. 1.2.3")
+    print("Script By KrisIsHere | SkidKit Ver. 1.2.4")
     exit('\nroot access required\n')
 
-version = "1.2.3"
+version = "1.2.4"
 
 ascii = ["""\x1b[1;33m
    _____ _    _     _ _  ___ _
@@ -52,10 +52,7 @@ def setupcheck():
         print(os.getcwd())
         setup = input(
             "It appears as tho you have setup your SkidKit would you like to? \033[0;33m(\033[0;33mY\033[92;40m/\033[0;33mN)\33[37m: ")
-        if setup == "Y":
-            os.system("sudo python3 setup.py")
-            os.system("python3 tools/main.py")
-        if setup == "y":
+        if setup in ["Y", "y"]:
             os.system("sudo python3 setup.py")
             os.system("python3 tools/main.py")
         else:
@@ -63,9 +60,7 @@ def setupcheck():
             print(random.choice(ascii))
             sure = input(
                 "\033[0;37mAre you sure you dont wanna set it up? \033[0;33m(\033[0;33mY\033[92;40m/\033[0;33mN)\33[37m: ")
-            if sure == "Y":
-                os.system("python3 tools/main.py")
-            if sure == "y":
+            if sure in ["Y", "y"]:
                 os.system("python3 tools/main.py")
             else:
                 setupcheck()
@@ -88,15 +83,7 @@ def ver_check():
             else:
                 print('\n\033[38;2;88;159;240m[\x1b[1;31mAvailable\033[38;2;88;159;240m: \x1b[1;31m{}\033[38;2;88;159;240m'.format(github_ver) + ']' + '\n')
                 up = input("\033[38;2;88;159;240mWould you like to update? \033[0;33m(\033[0;33mY\033[92;40m/\033[0;33mN)\33[37m: ")
-                if up == "y":
-                    os.system("rm -rf tools/.info/tools.py")
-                    path = os.getcwd()
-                    parent = os.path.abspath(os.path.join(path, os.pardir))
-                    os.system("cp -r tools/.info " + parent)
-                    os.system("cp -r tools/update.py " + parent)
-                    os.system("python3 " + parent + "/update.py")
-                    sys.exit()
-                elif up == "Y":
+                if up in ["y", "Y"]:
                     os.system("rm -rf tools/.info/tools.py")
                     path = os.getcwd()
                     parent = os.path.abspath(os.path.join(path, os.pardir))
@@ -124,19 +111,11 @@ else:
         print(random.choice(ascii))
         tos_1 = input("""You must agree to our terms and conditions first \033[0;33m(\033[0;33mY\033[92;40m/\033[0;33mN)
     \033[0;37mPress \033[0;33m'\033[0;33mP\033[0;33m'\033[0;37m to view the terms and conditions\33[37m: """)
-        if tos_1 == "y":
+        if tos_1 in ["Y", "y"]:
             loooop = "false"
             os.system("touch tools/.info/tos_agree.py")
             setupcheck()
-        if tos_1 == "n":
+        if tos_1 in ["N", "n"]:
             sys.exit(1)
-        if tos_1 == "p":
-            os.system("cat tos.txt")
-        if tos_1 == "Y":
-            loooop = "false"
-            os.system("touch tools/.info/tos_agree.py")
-            setupcheck()
-        if tos_1 == "N":
-            sys.exit(1)
-        if tos_1 == "P":
+        if tos_1 in ["p", "P"]:
             os.system("cat tos.txt")
